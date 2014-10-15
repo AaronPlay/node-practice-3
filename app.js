@@ -22,12 +22,9 @@ app.get('/', function (req, res, next) {
       });
 
       var ep = new eventproxy();
-<<<<<<< HEAD
       topicUrls.forEach (function (topicUrl) {
-=======
 
       topicUrls.forEach(function (topicUrl) {
->>>>>>> c7af35b0eb61d53cf0138c76bb11f31d6ab74cd6
         superagent.get(topicUrl)
           .end(function (err, sres) {
             ep.emit('topic_html', [topicUrl, sres.text]);
@@ -39,10 +36,6 @@ app.get('/', function (req, res, next) {
           var topicUrl = topicPair[0];
           var topicHtml = topicPair[1];
           var $ = cheerio.load(topicHtml);
-<<<<<<< HEAD
-=======
-
->>>>>>> c7af35b0eb61d53cf0138c76bb11f31d6ab74cd6
           return ({
             title : $('.topic_full_title').text().trim(),
             href : topicUrl,
