@@ -22,7 +22,6 @@ app.get('/', function (req, res, next) {
       });
 
       var ep = new eventproxy();
-      topicUrls.forEach (function (topicUrl) {
 
       topicUrls.forEach(function (topicUrl) {
         superagent.get(topicUrl)
@@ -44,8 +43,6 @@ app.get('/', function (req, res, next) {
         });
         res.send(topics);
       });
-
-    });
+  });
 });
-
 module.exports = app;
