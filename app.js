@@ -5,7 +5,6 @@ var eventproxy = require('eventproxy');
 
 var app = express();
 
-
 app.listen(process.env.PORT || 5000);
 
 var cnodeUrl = "https://www.cnodejs.org";
@@ -29,7 +28,7 @@ app.get('/', function (req, res, next) {
 					.end(function (err, sres) {
 						ep.emit('topic_html', [topicUrl, sres.text]);
 					});
-			});
+      });
 				
 			ep.after("topic_html", topicUrls.length, function (topics) {
 				topics = topics.map(function (topicPair) {
