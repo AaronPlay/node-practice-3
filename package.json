@@ -16,9 +16,9 @@
   },
   "devDependencies": {
     "coveralls": "*",
+    "istanbul": "^0.3.2",
     "mocha": "*",
     "should": "*",
-    "supertest": "*",
-    "istanbul": "*"
+    "supertest": "*"
   }
 }
