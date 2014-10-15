@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/Ricardo-Li/node-practice-3.svg?branch=master)](https://travis-ci.org/Ricardo-Li/node-practice-3)
 
+[![Coverage Status](https://coveralls.io/repos/Ricardo-Li/node-practice-3/badge.png)](https://coveralls.io/r/Ricardo-Li/node-practice-3)
+
 在 practice 2 的基础上，输出每一个 topic 中的第一条评论。为 practice 3 的代码写测试代码，使行覆盖率达到 90%。
 
 ---
