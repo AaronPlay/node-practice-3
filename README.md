@@ -1,5 +1,7 @@
 #node-practice-3
 
+https://travis-ci.org/Ricardo-Li/node-practice-3.svg?branch=master
+
 在 practice 2 的基础上，输出每一个 topic 中的第一条评论。为 practice 3 的代码写测试代码，使行覆盖率达到 90%。
 
 ---
