@@ -9,14 +9,14 @@ app.listen(process.env.PORT || 5000);
 
 var cnodeUrl = "https://www.cnodejs.org";
 app.get('/', function (req, res, next) {
-	superagent.get(cnodeUrl)
-		.end(function (err, sres) {
-			if (err) {
-				return next(err);
-			}
+  superagent.get(cnodeUrl)
+    .end(function (err, sres) {
+      if (err) {
+        return next(err);
+      }
 
-			var topicUrls = [];
-			var $ = cheerio.load(sres.text);
+      var topicUrls = [];
+      var $ = cheerio.load(sres.text);
 			$('a.topic_title').each(function (i, element) {
 				topicUrls.push(cnodeUrl + $(element).attr('href'));
 			});
@@ -43,8 +43,7 @@ app.get('/', function (req, res, next) {
 					});
 				});
 				res.send(topics);
-			});
-			
+			});	
 		});
 });
 
