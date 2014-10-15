@@ -44,7 +44,6 @@ app.get('/', function (req, res, next) {
 				});
 				res.send(topics);
 			});
-			
 		});
 });
 
